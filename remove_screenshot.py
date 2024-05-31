@@ -1,11 +1,11 @@
 import os
 
-desktop = os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop') 
+desktop = "/Users/morgan.oates/Desktop/"
 file = os.listdir(desktop)
 
 if os.path.exists(desktop):
     for files in file:
-        files = desktop + "/" + files
+        files = desktop + files
        
         if 'Screenshot' in files:
             os.remove(files)

@@ -1,6 +1,6 @@
 import os
 
-desktop = "~/Users/morgan.oates/Desktop"
+desktop = os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop') 
 file = os.listdir(desktop)
 
 if os.path.exists(desktop):

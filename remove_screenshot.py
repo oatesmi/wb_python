@@ -9,5 +9,3 @@ if os.path.exists(desktop):
        
         if 'Screenshot' in files:
             os.remove(files)
-        else:
-            pass

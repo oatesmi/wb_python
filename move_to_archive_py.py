@@ -4,11 +4,11 @@ import datetime
 from pathlib import Path
 
 pythonf = "/Users/morgan.oates/Desktop/python/"
-filepath = os.listdir(pythonf)
+filepath_py = os.listdir(pythonf)
 now = str(datetime.datetime.now())
 
 if os.path.exists(pythonf):
-    for files in filepath:
+    for files in filepath_py:
         files = pythonf + files
        
         if ".xlsx" in files:
